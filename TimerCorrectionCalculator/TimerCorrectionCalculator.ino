@@ -23,7 +23,9 @@ void pciSetup(byte pin) {
   bitSet(PCICR, digitalPinToPCICRbit(pin)); // Разрешаем PCINT для соответствующей группы пинов
 }
 
+// WORK и PERIOD из Pump.ino в миллисекундах
 #define EXPECTED 5000;
+// количество цифр после запятой для поправочного коэффициента. Достаточно 6 - погрешность в районе 1с/3д
 #define PRECISION 6
 long N = -1, prevMillis = 0, sum = 0, firstMillis;
 float prevCorr = 0;
