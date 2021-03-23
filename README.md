@@ -30,5 +30,5 @@ SENSOR_PIN: берем два провода, один подключаем к S
 
 ![Автополив_МП](https://github.com/asilichenko/Autowatering/blob/main/scheme/Автополив_МП.jpg)
 
-![Автополив_схема](https://github.com/asilichenko/Autowatering/blob/main/scheme/Автополив_схема_v2.jpg)
+![Автополив_схема](https://github.com/asilichenko/Autowatering/blob/main/scheme/Автополив_схема_v3.jpg)
 
