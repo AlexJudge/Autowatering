@@ -17,6 +17,11 @@
 #include <EEPROM.h>
 #include <avr/sleep.h>
 
+// Режим работы Arduino по приоритетам
+//#define MODE_CLEAR     // очистка постоянной памяти
+//#define MODE_MONITORING  // ждем сигнала и записываем время
+// По-умолчанию: печать содержимого памяти
+
 // Конфиг для МК №1
 #define SIGNAL_1_NAME        String("ATTiny85")
 #define SIGNAL_1_PIN         5
@@ -35,11 +40,6 @@ int data2Addr = SIGNAL_2_START_ADDR;
 // Кнопка включения режима "запись в память разрешена"
 #define BTN_MEM_W_ENABLE_PIN A0
 bool memWriteEnabled = false;
-
-// Режим работы Arduino по приоритетам
-//#define MODE_CLEAR     // очистка постоянной памяти
-#define MODE_MONITORING  // ждем сигнала и записываем время
-// По-умолчанию: печать содержимого памяти
 
 void setup() {
   Serial.begin(9600);
